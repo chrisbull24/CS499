@@ -1,1 +1,2354 @@
-<h1>Initial test page to show GitHub Page functionality</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Capstone Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    .section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .code-container {
+      max-height: 300px;
+      overflow: hidden;
+      position: relative;
+      background: #eee;
+      padding: 10px;
+      border-radius: 4px;
+      transition: max-height 0.3s ease;
+    }
+    .code-container.expanded {
+      max-height: none;
+    }
+    .expand-btn {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      margin-top: 5px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    h2, h3 {
+      color: #333;
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      overflow: auto;
+      border-radius: 4px;
+    }
+    iframe {
+      display: block;
+      margin: 0 auto;
+    }
+    ul {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Professional Self-Assessment Section -->
+  <div class="section" id="professional-assessment">
+    <h2>Professional Self-Assessment</h2>
+    <p>Coming into the computer science program, I knew that I had a passion for programming, but wanted to learn more about how it is applied in professional environments. I had only worked with small scale scripts and programs with 200 lines or less of code. Many courses at SNHU fulfilled this exact need and showed me how computer science principles are applied in the workplace. Some great examples of this are:</p>
+    
+    <p><strong>CS-350 Emerging Systems Architectures &amp; Technologies</strong> – This class was extremely daunting at first but became a very interesting and engaging class as it progressed. It taught me about how embedded systems are developed and tested in the workplace using a Texas Instruments Microcontroller board and embedded C for programming. I felt that I wanted to keep exploring this topic which is why I chose it for my three artifact improvements in this capstone.</p>
+    
+    <p><strong>CS-465 Full Stack Development I</strong> – In this class, I learned the extremely important process of developing a full stack website from scratch. Although the website wasn’t very advanced, it showed me many of the tools used in full stack development which was extremely interesting to learn about. It also incorporated version control with GitHub which proved to be very useful knowledge to have for my career and personal projects.</p>
+    
+    <p><strong>CS-250 Software Development Lifecycle</strong> – In this SDLC class, I learned the extremely important concept of agile development. It taught me how to collaborate in a team environment for bigger projects. It also taught me how to communicate with stakeholders and incorporate their feedback even when they might not have a technical background.</p>
+    
+    <p><strong>CS-300 Data Structures and Algorithms: Analysis and Design</strong> – I learned A LOT of different algorithms and data structures used in programming today in this class. I was able to apply these algorithms and data structures in the many assignments throughout the course to gain a deeper understanding of their applications and limitations.</p>
+    
+    <p><strong>CS-405 Secure Coding</strong> – This class brought us through common security vulnerabilities each week and challenged us to think about ways to prevent and remedy them. We also learned how to use the Google Test framework to create unit tests in C++ to test our solutions for the vulnerabilities.</p>
+    
+    <p><strong>DAD-220 Introduction to Structured Database Environments</strong> – This class taught us how to create and manage databases through CLI. We learned topics like creating tables, joining tables, and writing multi-line SQL queries to extract granular data from large databases.</p>
+    
+    <p>Overall, I now have an extremely solid foundational knowledge of computer science principles applied in the workplace. Each of the aforementioned classes helped me build this foundation and increased my confidence when working with programs in my career.</p>
+    
+    <p>For my portfolio, I chose to enhance my CS-350 final project as this was the class that challenged me the most in my time at SNHU. We had created a very basic thermostat program with a TI microcontroller, but I felt that there was a lot of room to showcase the foundational skills that I have acquired through coursework. The initial program reads the ambient temperature of the room and allows the user to adjust the setpoint temperature (the desired temperature) using the buttons on the left and right side of the board. To showcase the skills that I have acquired through the SNHU computer science program, I planned to make the following improvements:</p>
+    
+    <p>
+      Enhance the documentation and overall structure of the program with the goal of creating a program that facilitates easy collaboration and debugging. Add thorough comments for each function in the program and separate large blocks of code into their own functions.
+    </p>
+    
+    <p>Add the following functionality to the thermostat:</p>
+    <ul>
+      <li>Heating AND Cooling settings for the thermostat with the ability for the user to switch between them using the microcontroller buttons</li>
+      <li>Cooling threshold algorithm to reduce the number of times the system must turn on/off</li>
+      <li>Fault-detection algorithm to negate sudden drastic temperature changes that would indicate an error in the reading</li>
+      <li>Timer-based setting that allows cooling/heating to be turned off after a set time of inactivity</li>
+    </ul>
+    
+    <p>Adding a database to the program that logs every time the user makes an input and writes this to the database with a timestamp of the action. This database should include which value was changed and the before and after value.</p>
+    
+    <p>Adding these features to the program will showcase my ability to design and engineer new solutions in an existing code base, work with new algorithms and data structures, and fully implement a database into an existing program.</p>
+  </div>
+
+  <!-- Code Review Video Section -->
+  <div class="section" id="code-review-video">
+    <h2>Code Review Video</h2>
+    <p>In the below video, I review the exisiting code base and explain some of its functionality. I mention areas where I think the code can be improved and also touch on some of my planned enhancements.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h_TQFe0QMuw?si=4yWTvuiqBFBLZtyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <!-- Software Engineering and Design Enhancement Section -->
+  <div class="section" id="enhancement-1">
+    <h2>Software Engineering and Design Enhancement</h2>
+    <div class="narrative">
+      <p>The artifact that I chose to improve for the Software Design/Engineering section of the final project is my final project from SNHU’s CS-350 Emerging Sys Arch & Tech class. In this project, we used a CS3220x-LAUNCHXL microcontroller to develop a prototype of a thermostat. The thermostat reads the ambient temperature of the room every 500 milliseconds. The user can press buttons on the side of the microcontroller to adjust the set temperature for the room. If the set temperature goes above the current ambient temperature, an LED turns on indicating that the heat should be turned on. </p>
+      <p>I selected this project because it is the project at SNHU that I felt challenged me the most. I went into it with no experience in embedded systems and ran into many issues while I was getting used to the new coding style and IDE. By the end of the class, I felt a lot more comfortable with embedded systems development and even found them enjoyable to work with.</p>
+      <p>I developed the main loop in the program, but overall, the entire program showcases my skills and abilities in software development. I went into a completely foreign language and (for the most part) programming language and was able to build a functional prototype of a thermostat. I learned how to properly interact with the clunky and intricate libraries of embedded systems and learned a lot of the stuff that happens behind the scenes in embedded systems throughout the class.</p>
+      <p>I improved the artifact in this section by applying as many C standard practices that I could find to make the code much more organized and easier to read. Some of the biggest changes I made were creating code section dividers based on the parts of the program and adding thorough documentation for each of the functions being utilized. There were numerous other smaller changes that I made like:
+        <ul>
+          <li>Added prefixes like g_ for global variables</li>
+          <li>Replaced hard-coded numbers with meaningful names</li>
+          <li>Used const where appropriate</li>
+          <li>Consistent bracket styling</li>
+          <li>Ensured all critical initialization functions check their return values</li>
+          <li>File header comment with file name, purpose, author, and date</li>
+          <li>Appropriately grouped include statements and global variables</li>
+          <li>Grouping of initialization functions</li>
+          <li>Simplified logic in main loop by using shorthand notation allowing for easier readability and maintainability</li>
+          <li>Made sure the indentation was consistent across entire program (4 spaces)</li>
+          <li>Rewrote comments to be more meaningful</li>
+        </ul>
+      </p>
+      <p>The course outcome that I planned to meet with this enhancement was: “Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts”. I did meet this course outcome by dramatically improving the written communication within the program’s source code. I put an emphasis on the coherency of the documentation to ensure that it would make sense to someone who might not have prior experience with embedded systems. This allows for much greater maintainability by me and other programmers. Additionally, I was able to provide a professional oral overview of the program in my module 2 code review.</p>
+    </div>
+      <h3>Before Enhancement</h3>
+      <div class="code-container" id="codeBlock1">
+        <pre><code class="language-c">
+          /*
+          * Copyright (c) 2015-2020, Texas Instruments Incorporated
+          * All rights reserved.
+          *
+          * Redistribution and use in source and binary forms, with or without
+          * modification, are permitted provided that the following conditions
+          * are met:
+          *
+          * *  Redistributions of source code must retain the above copyright
+          *    notice, this list of conditions and the following disclaimer.
+          *
+          * *  Redistributions in binary form must reproduce the above copyright
+          *    notice, this list of conditions and the following disclaimer in the
+          *    documentation and/or other materials provided with the distribution.
+          *
+          * *  Neither the name of Texas Instruments Incorporated nor the names of
+          *    its contributors may be used to endorse or promote products derived
+          *    from this software without specific prior written permission.
+          *
+          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+          * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+          * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+          * PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+          * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+          * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+          * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+          * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+          * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+          * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+          * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+          */
+         
+         /*
+          *  ======== gpiointerrupt.c ========
+          */
+         
+         #include <stdint.h>
+         #include <stddef.h>
+         #include <stdio.h>
+         
+         /* Driver Header files */
+         #include <ti/drivers/GPIO.h>
+         #include <ti/drivers/I2C.h>
+         #include <ti/drivers/Timer.h>
+         #include <ti/drivers/UART2.h>
+         
+         /* Driver configuration */
+         #include "ti_drivers_config.h"
+         
+         #define DISPLAY(x) UART2_write(uart, &output, x, NULL);
+         
+         // I2C Global Variables
+         static const struct {
+             uint8_t address;
+             uint8_t resultReg;
+             char *id;
+         } sensors[3] = {
+             { 0x48, 0x0000, "11X" },
+             { 0x49, 0x0000, "116" },
+             { 0x41, 0x0001, "006" }
+         };
+         uint8_t             txBuffer[1];
+         uint8_t             rxBuffer[2];
+         I2C_Transaction     i2cTransaction;
+         
+         // UART Global Variables
+         char                output[64];
+         int                 bytesToSend;
+         
+         // Driver Handles - Global variables
+         I2C_Handle      i2c;
+         UART2_Handle     uart;
+         Timer_Handle    timer0;
+         
+         volatile unsigned char TimerFlag = 0;
+         
+         // flags for button presses
+         volatile uint8_t button0Flag = 0;
+         volatile uint8_t button1Flag = 0;
+         
+         // temp initial temperature before the first read of the temperature sensor
+         int16_t temperature = 25;
+         int16_t setpoint = 25;
+         int heat = 0;
+         int seconds = 0;
+         
+         // Forward Declarations
+         void initUART(void);
+         void initI2C(void);
+         int16_t readTemp(void);
+         void initTimer(void);
+         
+         // UART Initialization
+         void initUART(void)
+         {
+             UART2_Params uartParams;
+             UART2_Params_init(&uartParams);
+             uartParams.baudRate = 115200;
+             uart = UART2_open(CONFIG_UART2_0, &uartParams);
+             if (uart == NULL) {
+                 while (1);
+             }
+         }
+         
+         // I2C Initialization
+         void initI2C(void)
+         {
+             int8_t i, found;
+             I2C_Params i2cParams;
+             DISPLAY(snprintf(output, 64, "Initializing I2C Driver - "))
+             I2C_init();
+             I2C_Params_init(&i2cParams);
+             i2cParams.bitRate = I2C_400kHz;
+             i2c = I2C_open(CONFIG_I2C_0, &i2cParams);
+             if (i2c == NULL) {
+                 DISPLAY(snprintf(output, 64, "Failed\n\r"))
+                 while (1);
+             }
+             DISPLAY(snprintf(output, 32, "Passed\n\r"))
+         
+             i2cTransaction.writeBuf = txBuffer;
+             i2cTransaction.writeCount = 1;
+             i2cTransaction.readBuf = rxBuffer;
+             i2cTransaction.readCount = 0;
+         
+             found = false;
+             for (i=0; i<3; ++i) {
+                 i2cTransaction.targetAddress = sensors[i].address;
+                 txBuffer[0] = sensors[i].resultReg;
+                 DISPLAY(snprintf(output, 64, "Is this %s? ", sensors[i].id))
+                 if (I2C_transfer(i2c, &i2cTransaction)) {
+                     DISPLAY(snprintf(output, 64, "Found\n\r"))
+                     found = true;
+                     break;
+                 }
+                 DISPLAY(snprintf(output, 64, "No\n\r"))
+             }
+             if(found) {
+                 DISPLAY(snprintf(output, 64, "Detected TMP%s I2C address: %x\n\r", sensors[i].id, i2cTransaction.targetAddress))
+             } else {
+                 DISPLAY(snprintf(output, 64, "Temperature sensor not found, contact professor\n\r"))
+             }
+         }
+         
+         // Read Temperature from I2C Sensor
+         int16_t readTemp(void)
+         {
+             int16_t temperature = 0;
+             i2cTransaction.readCount = 2;
+             if (I2C_transfer(i2c, &i2cTransaction)) {
+                 temperature = (rxBuffer[0] << 8) | (rxBuffer[1]);
+                 temperature *= 0.0078125;
+                 if (rxBuffer[0] & 0x80) {
+                     temperature |= 0xF000;
+                 }
+             } else {
+                 DISPLAY(snprintf(output, 64, "Error reading temperature sensor (%d)\n\r", i2cTransaction.status))
+                 DISPLAY(snprintf(output, 64, "Please power cycle your board by unplugging USB and plugging back in.\n\r"))
+             }
+             return temperature;
+         }
+         
+         // Timer Callback
+         void timerCallback(Timer_Handle myHandle, int_fast16_t status)
+         {
+             TimerFlag = 1;
+         }
+         
+         // Initialize Timer
+         void initTimer(void)
+         {
+             Timer_Params params;
+             Timer_init();
+             Timer_Params_init(&params);
+             // set period to 100 ms so that we can perform checks at the given intervals in lab guide
+             params.period = 100000;
+             params.periodUnits = Timer_PERIOD_US;
+             params.timerMode = Timer_CONTINUOUS_CALLBACK;
+             params.timerCallback = timerCallback;
+             timer0 = Timer_open(CONFIG_TIMER_0, &params);
+             if (timer0 == NULL) {
+                 while (1) {}
+             }
+             if (Timer_start(timer0) == Timer_STATUS_ERROR) {
+                 while (1) {}
+             }
+         }
+         
+         /*
+          *  ======== gpioButtonFxn0 ========
+          *  Called when button 0 is pressed.
+          */
+         void gpioButtonFxn0(uint_least8_t index)
+         {
+             // flag for button press - increment setpoint
+             button0Flag = 1;
+         }
+         
+         /*
+          *  ======== gpioButtonFxn1 ========
+          *  Called when button 1 is pressed.
+          */
+         void gpioButtonFxn1(uint_least8_t index)
+         {
+             // flag for button press - decrement setpoint
+             button1Flag = 1;
+         }
+         
+         /*
+          *  ======== mainThread ========
+          */
+         void *mainThread(void *arg0)
+         {
+             GPIO_init();
+         
+             // initialize
+             initUART();
+             initI2C();
+             initTimer();
+         
+             // Configure the LED and button pins
+             GPIO_setConfig(CONFIG_GPIO_LED_0, GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+             GPIO_setConfig(CONFIG_GPIO_BUTTON_0, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+         
+             // Turn on user LED initially
+             GPIO_write(CONFIG_GPIO_LED_0, CONFIG_GPIO_LED_ON);
+         
+             // Install Button callbacks
+             GPIO_setCallback(CONFIG_GPIO_BUTTON_0, gpioButtonFxn0);
+             GPIO_enableInt(CONFIG_GPIO_BUTTON_0);
+         
+             if (CONFIG_GPIO_BUTTON_0 != CONFIG_GPIO_BUTTON_1) {
+                 GPIO_setConfig(CONFIG_GPIO_BUTTON_1, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+                 GPIO_setCallback(CONFIG_GPIO_BUTTON_1, gpioButtonFxn1);
+                 GPIO_enableInt(CONFIG_GPIO_BUTTON_1);
+             }
+         
+             // initial read of temperature
+             temperature = readTemp();
+         
+             // a tick is 100 ms in this scenario
+             // timer count will keep track of the amount of ticks since launch
+             int timerCount = 0;
+         
+             while (1) {
+                 while (!TimerFlag) {}
+                 TimerFlag = 0;
+                 timerCount++;
+         
+                 // this block gets executed every 200 ms
+                 if (timerCount % 2 == 0) {
+                     // if button 0 was pressed, incremement setpoint temp
+                     if (button0Flag) {
+                         setpoint++;
+         
+                         // check to prevent >99 as restricted in lab guide
+                         if (setpoint > 99) {
+                             setpoint = 99;
+                         }
+         
+                         button0Flag = 0;
+                     }
+                     // if button 1 was pressed, decrement setpoint temp
+                     if (button1Flag) {
+                         setpoint--;
+         
+                         // check to prevent <0 as restricted in lab guide
+                         if (setpoint < 0) {
+                             setpoint = 0;
+                         }
+         
+                         button1Flag = 0;
+                     }
+                 }
+         
+                 // this block gets executed every 500 ms and reads a new temp from the sensor
+                 if (timerCount % 5 == 0) {
+                     temperature = readTemp();
+                 }
+         
+                 // this block gets executed every second
+                 if (timerCount % 10 == 0) {
+                     // if temperature is less than the desired temp, turn heat on
+                     // if it is greater than the desired temp, turn heat off
+                     if (temperature < setpoint) {
+                         heat = 1;
+                         GPIO_write(CONFIG_GPIO_LED_0, CONFIG_GPIO_LED_ON);
+                     } else {
+                         heat = 0;
+                         GPIO_write(CONFIG_GPIO_LED_0, CONFIG_GPIO_LED_OFF);
+                     }
+         
+                     // output to uart in desired format from lab guide
+                     DISPLAY(snprintf(output, 64, "<%02d,%02d,%d,%04d>\n\r", temperature, setpoint, heat, seconds));
+         
+                     // increment seconds counter for uart output
+                     seconds++;
+                 }
+             }
+         
+             return (NULL);
+         }
+         
+        </code></pre>
+      </div>
+      <button class="expand-btn" onclick="toggleCode('codeBlock1', this)">Show More</button>
+
+      <h3>After Enhancement</h3>
+      <div class="code-container" id="codeBlock2">
+        <pre><code class="language-c">
+          /*
+          * gpiointerrupt.c
+          * Purpose: Basic thermostat demonstration program. Allows user to set a temperature and
+          * the microcontroller board will respond with turning heat on/off
+          * Author: Christopher Bull
+          * Date: 1/26/2025
+          */
+         
+         /*
+          * Copyright (c) 2015-2020, Texas Instruments Incorporated
+          * All rights reserved.
+          *
+          * Redistribution and use in source and binary forms, with or without
+          * modification, are permitted provided that the following conditions
+          * are met:
+          *
+          * *  Redistributions of source code must retain the above copyright
+          *    notice, this list of conditions and the following disclaimer.
+          *
+          * *  Redistributions in binary form must reproduce the above copyright
+          *    notice, this list of conditions and the following disclaimer in the
+          *    documentation and/or other materials provided with the distribution.
+          *
+          * *  Neither the name of Texas Instruments Incorporated nor the names of
+          *    its contributors may be used to endorse or promote products derived
+          *    from this software without specific prior written permission.
+          *
+          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+          * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+          * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+          * PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+          * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+          * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+          * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+          * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+          * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+          * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+          * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+          */
+         
+         // ============================ Includes ============================
+         #include <stdint.h>
+         #include <stddef.h>
+         #include <stdio.h>
+         
+         /* Driver Header files */
+         #include <ti/drivers/GPIO.h>
+         #include <ti/drivers/I2C.h>
+         #include <ti/drivers/Timer.h>
+         #include <ti/drivers/UART2.h>
+         
+         /* Driver configuration */
+         #include "ti_drivers_config.h"
+         
+         // ============================ Definitions ============================
+         #define DISPLAY(x) UART2_write(g_uart, &g_output, x, NULL)
+         #define OUTPUT_SIZE 64
+         #define SENSOR_COUNT 3
+         #define TIMER_PERIOD_US 100000
+         #define MAX_SETPOINT 99
+         #define MIN_SETPOINT 0
+         
+         // ============================ Global Variables ============================
+         /* I2C Configuration */
+         static const struct {
+             uint8_t address;
+             uint8_t resultReg;
+             const char *id;
+         } g_sensors[SENSOR_COUNT] = {
+             { 0x48, 0x0000, "11X" },
+             { 0x49, 0x0000, "116" },
+             { 0x41, 0x0001, "006" }
+         };
+         uint8_t g_txBuffer[1];
+         uint8_t g_rxBuffer[2];
+         I2C_Transaction g_i2cTransaction;
+         
+         /* UART Configuration */
+         char g_output[OUTPUT_SIZE];
+         int g_bytesToSend;
+         
+         /* Driver Handles */
+         I2C_Handle g_i2c;
+         UART2_Handle g_uart;
+         Timer_Handle g_timer0;
+         
+         /* Timer and Button Flags */
+         volatile unsigned char g_timerFlag = 0;
+         volatile uint8_t g_button0Flag = 0;
+         volatile uint8_t g_button1Flag = 0;
+         
+         /* Temperature Control Variables */
+         int16_t g_temperature = 25;
+         int16_t g_setpoint = 25;
+         int g_heat = 0;
+         int g_seconds = 0;
+         
+         // ============================ Function Declarations ============================
+         void initUART(void);
+         void initI2C(void);
+         int16_t readTemp(void);
+         void initTimer(void);
+         void timerCallback(Timer_Handle myHandle, int_fast16_t status);
+         void gpioButtonFxn0(uint_least8_t index);
+         void gpioButtonFxn1(uint_least8_t index);
+         void *mainThread(void *arg0);
+         
+         // ============================ Initialization Functions ============================
+         
+         /* initUART() sets up the UART communication by configuring its parameters, like the baud rate (speed of communication),
+          * and opening a connection. If something goes wrong during initialization, the program gets stuck in an infinite loop
+          * to signal a critical error. */
+         void initUART(void)
+         {
+             UART2_Params uartParams;
+             UART2_Params_init(&uartParams);
+             uartParams.baudRate = 115200;
+             g_uart = UART2_open(CONFIG_UART2_0, &uartParams);
+             if (g_uart == NULL) {
+                 while (1); // Error: UART initialization failed
+             }
+         }
+         
+         /* initI2C() initializes the I2C communication by setting up its parameters and testing connections
+          * with multiple sensors to find the right one. It sends messages to indicate progress and checks if the
+          * setup works. If it fails, the program stops to signal an error. Once a sensor is found, it displays
+          * the detected address. If not, it gives an error message asking to contact professor. */
+         void initI2C(void)
+         {
+             int8_t i;
+             int found = 0;
+             I2C_Params i2cParams;
+             DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Initializing I2C Driver - "));
+             I2C_init();
+             I2C_Params_init(&i2cParams);
+             i2cParams.bitRate = I2C_400kHz;
+             g_i2c = I2C_open(CONFIG_I2C_0, &i2cParams);
+             if (g_i2c == NULL) {
+                 DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Failed\n\r"));
+                 while (1); // Error: I2C initialization failed
+             }
+             DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Passed\n\r"));
+         
+             g_i2cTransaction.writeBuf = g_txBuffer;
+             g_i2cTransaction.writeCount = 1;
+             g_i2cTransaction.readBuf = g_rxBuffer;
+             g_i2cTransaction.readCount = 0;
+         
+             for (i = 0; i < SENSOR_COUNT; ++i) {
+                 g_i2cTransaction.targetAddress = g_sensors[i].address;
+                 g_txBuffer[0] = g_sensors[i].resultReg;
+                 DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Is this %s? ", g_sensors[i].id));
+                 if (I2C_transfer(g_i2c, &g_i2cTransaction)) {
+                     DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Found\n\r"));
+                     found = 1;
+                     break;
+                 }
+                 DISPLAY(snprintf(g_output, OUTPUT_SIZE, "No\n\r"));
+             }
+             if (found) {
+                 DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Detected TMP%s I2C address: %x\n\r", g_sensors[i].id, g_i2cTransaction.targetAddress));
+             } else {
+                 DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Temperature sensor not found, contact professor\n\r"));
+             }
+         }
+         
+         /* initTimer() sets up a timer to run continuously, triggering a specific callback function at regular
+          * intervals (based on the set period). It initializes the timer parameters and starts it. The program
+          * is stopped if something goes wrong. */
+         void initTimer(void)
+         {
+             Timer_Params params;
+             Timer_init();
+             Timer_Params_init(&params);
+             params.period = TIMER_PERIOD_US;
+             params.periodUnits = Timer_PERIOD_US;
+             params.timerMode = Timer_CONTINUOUS_CALLBACK;
+             params.timerCallback = timerCallback;
+             g_timer0 = Timer_open(CONFIG_TIMER_0, &params);
+             if (g_timer0 == NULL) {
+                 while (1); // Error: Timer initialization failed
+             }
+             if (Timer_start(g_timer0) == Timer_STATUS_ERROR) {
+                 while (1); // Error: Timer start failed
+             }
+         }
+         
+         // ============================ Functional Logic ============================
+         
+         /* readTemp() reads the temperature from a sensor using I2C communication. It processes the data
+          * received into a human-readable temperature value (celsius) and checks for errors during the transfer.
+          * If something goes wrong, it shows an error message and suggests resetting the system. */
+         int16_t readTemp(void)
+         {
+             int16_t temperature = 0;
+             g_i2cTransaction.readCount = 2;
+             if (I2C_transfer(g_i2c, &g_i2cTransaction)) {
+                 temperature = (g_rxBuffer[0] << 8) | (g_rxBuffer[1]);
+                 temperature *= 0.0078125;
+                 if (g_rxBuffer[0] & 0x80) {
+                     temperature |= 0xF000;
+                 }
+             } else {
+                 DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Error reading temperature sensor (%d)\n\r", g_i2cTransaction.status));
+                 DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Please power cycle your board by unplugging USB and plugging back in.\n\r"));
+             }
+             return temperature;
+         }
+         
+         /* Timer Callback */
+         void timerCallback(Timer_Handle myHandle, int_fast16_t status)
+         {
+             g_timerFlag = 1;
+         }
+         
+         /* GPIO Button Handlers */
+         void gpioButtonFxn0(uint_least8_t index)
+         {
+             g_button0Flag = 1;
+         }
+         
+         void gpioButtonFxn1(uint_least8_t index)
+         {
+             g_button1Flag = 1;
+         }
+         
+         // ============================ Main Logic ============================
+         void *mainThread(void *arg0)
+         {
+             GPIO_init();
+             initUART();
+             initI2C();
+             initTimer();
+         
+             // Set the LED to start off
+             GPIO_setConfig(CONFIG_GPIO_LED_0, GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+         
+             // Configure button 0 to detect button presses
+             GPIO_setConfig(CONFIG_GPIO_BUTTON_0, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+         
+             // Turn on the LED initially as a visual indicator
+             GPIO_write(CONFIG_GPIO_LED_0, CONFIG_GPIO_LED_ON);
+         
+             // Attach a callback function for Button 0 and enable its interrupt
+             GPIO_setCallback(CONFIG_GPIO_BUTTON_0, gpioButtonFxn0);
+             GPIO_enableInt(CONFIG_GPIO_BUTTON_0);
+         
+             // Apply this same configuration to button 1
+             if (CONFIG_GPIO_BUTTON_0 != CONFIG_GPIO_BUTTON_1) {
+                 GPIO_setConfig(CONFIG_GPIO_BUTTON_1, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+                 GPIO_setCallback(CONFIG_GPIO_BUTTON_1, gpioButtonFxn1);
+                 GPIO_enableInt(CONFIG_GPIO_BUTTON_1);
+             }
+         
+             g_temperature = readTemp();
+             int timerCount = 0;
+         
+             // Main program loop
+             while (1) {
+                 while (!g_timerFlag);
+                 g_timerFlag = 0;
+                 timerCount++;
+         
+                 // Every 200ms, check if either button was pressed
+                 if (timerCount % 2 == 0) {
+         
+                     // If Button 0 was pressed, decrease the setpoint, down to a min value of 0
+                     if (g_button0Flag) {
+                         g_setpoint = (g_setpoint > MIN_SETPOINT) ? g_setpoint - 1 : MIN_SETPOINT;
+                         g_button0Flag = 0;
+                     }
+         
+                     // If Button 1 was pressed, increase the setpoint, up to a max value of 99
+                     if (g_button1Flag) {
+                         g_setpoint = (g_setpoint < MAX_SETPOINT) ? g_setpoint + 1 : MAX_SETPOINT;
+                         g_button1Flag = 0;
+                     }
+                 }
+         
+                 // Every 500ms, read a new temperature from the sensor
+                 if (timerCount % 5 == 0) {
+                     g_temperature = readTemp();
+                 }
+         
+                 // Every 1 second, check the temperature, update heating status, and send data
+                 if (timerCount % 10 == 0) {
+         
+                     // Turn the heat on if the temperature is below the setpoint; otherwise, turn it off
+                     g_heat = (g_temperature < g_setpoint);
+                     GPIO_write(CONFIG_GPIO_LED_0, g_heat ? CONFIG_GPIO_LED_ON : CONFIG_GPIO_LED_OFF);
+         
+                     // Display room temp, setpoint temp, heat status, and uptime to the user through UART
+                     DISPLAY(snprintf(g_output, OUTPUT_SIZE, "<%02d,%02d,%d,%04d>\n\r", g_temperature, g_setpoint, g_heat, g_seconds));
+         
+                     // Increment uptime variable in seconds
+                     g_seconds++;
+                 }
+             }
+         
+             return NULL;
+         }
+         
+        </code></pre>
+      </div>
+      <button class="expand-btn" onclick="toggleCode('codeBlock2', this)">Show More</button>
+    <p>While improving the artifact, I learned a lot about the professional documentation and coding standards that go along with C. They seemed a bit excessive at first, but applying many of these standards made the code extremely structured and much easier to read. Some of the smaller changes like adding “g_” before global variables are something that I can easily implement into my future projects. </p>
+    <p>I initially ran into trouble when enhancing my artifact because I realized that my environment did not have C++ compatibility. This eliminated the possibility of creating classes for my program to separate main sections of code. While it was possible to create workaround classes using structures, I believed that this would’ve made the code less readable, which would’ve gone against my purpose for refactoring the code in the first place.</p>
+  </div>
+
+  <!-- Algorithms and Data Structures Enhancement Section -->
+  <div class="section" id="enhancement-2">
+    <h2>Algorithms and Data Structures Enhancement</h2>
+    <div class="narrative">
+      <p>The artifact that I chose to improve for the Algorithms and Data Structures section of the final project is my final project from SNHU’s CS-350 Emerging Sys Arch & Tech class. In this project, we used a CS3220x-LAUNCHXL microcontroller to develop a prototype of a thermostat. The thermostat reads the ambient temperature of the room every 500 milliseconds. The user can press buttons on the side of the microcontroller to adjust the set temperature for the room. If the set temperature goes above the current ambient temperature, an LED turns on indicating that the heat should be turned on. </p>
+      <p>I chose to use this artifact to showcase my knowledge in the data structures and algorithms section because I felt that it had a lot of room for improvement. In CS-350, we spent most of the class learning how to work with embedded systems in general, so the final project didn’t have many extra features. Getting a basic thermostat program running with the embedded system was the goal of the class. To challenge myself, I wanted to further enhance this program by using knowledge I have learned about data structures and algorithms through other classes at SNHU. To do this, I created:</p>
+      <ul>
+        <li>Heating AND cooling settings for the thermostat</li>
+        <li>A Threshold algorithm to reduce the number of times the system must turn on/off</li>
+        <li>A Fault-detection algorithm to negate sudden drastic temperature changes that would indicate an error in the reading</li>
+        <li>A new timer implementation that turns off the system if it detects that it has been running for 30 consecutive minutes</li>
+      </ul>
+      <p>These implementations bring the functionality of the thermostat to the next level and bring it closer to what might be found in a commercial thermostat.</p>
+      <p>In module one, I planned for this section of the project to achieve the following course outcome: “Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices”. I believe that I did meet this course outcome in completing this section of the project. I successfully created and evaluated multiple algorithms that are widely used in household thermostats today. Each algorithm solves specific problems that a thermostat might face with everyday use. I had to work with the micro controller’s limitation of two buttons while implementing the cooling AND heating functionality. I decided that pressing both buttons at the same time will be used to switch modes. This is a tradeoff because now there is little to no room for new user-input based features without additional peripherals. </p>
+    </div>
+    <h3>Before Enhancement</h3>
+    <div class="code-container" id="codeBlock3">
+      <pre><code class="language-c">
+        /*
+        * gpiointerrupt.c
+        * Purpose: Basic thermostat demonstration program. Allows user to set a temperature and
+        * the microcontroller board will respond with turning heat on/off
+        * Author: Christopher Bull
+        * Date: 1/26/2025
+        */
+       
+       /*
+        * Copyright (c) 2015-2020, Texas Instruments Incorporated
+        * All rights reserved.
+        *
+        * Redistribution and use in source and binary forms, with or without
+        * modification, are permitted provided that the following conditions
+        * are met:
+        *
+        * *  Redistributions of source code must retain the above copyright
+        *    notice, this list of conditions and the following disclaimer.
+        *
+        * *  Redistributions in binary form must reproduce the above copyright
+        *    notice, this list of conditions and the following disclaimer in the
+        *    documentation and/or other materials provided with the distribution.
+        *
+        * *  Neither the name of Texas Instruments Incorporated nor the names of
+        *    its contributors may be used to endorse or promote products derived
+        *    from this software without specific prior written permission.
+        *
+        * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+        * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+        * PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+        * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+        * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+        * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+        * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+        * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+        * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+        * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        */
+       
+       // ============================ Includes ============================
+       #include <stdint.h>
+       #include <stddef.h>
+       #include <stdio.h>
+       
+       /* Driver Header files */
+       #include <ti/drivers/GPIO.h>
+       #include <ti/drivers/I2C.h>
+       #include <ti/drivers/Timer.h>
+       #include <ti/drivers/UART2.h>
+       
+       /* Driver configuration */
+       #include "ti_drivers_config.h"
+       
+       // ============================ Definitions ============================
+       #define DISPLAY(x) UART2_write(g_uart, &g_output, x, NULL)
+       #define OUTPUT_SIZE 64
+       #define SENSOR_COUNT 3
+       #define TIMER_PERIOD_US 100000
+       #define MAX_SETPOINT 99
+       #define MIN_SETPOINT 0
+       
+       // ============================ Global Variables ============================
+       /* I2C Configuration */
+       static const struct {
+           uint8_t address;
+           uint8_t resultReg;
+           const char *id;
+       } g_sensors[SENSOR_COUNT] = {
+           { 0x48, 0x0000, "11X" },
+           { 0x49, 0x0000, "116" },
+           { 0x41, 0x0001, "006" }
+       };
+       uint8_t g_txBuffer[1];
+       uint8_t g_rxBuffer[2];
+       I2C_Transaction g_i2cTransaction;
+       
+       /* UART Configuration */
+       char g_output[OUTPUT_SIZE];
+       int g_bytesToSend;
+       
+       /* Driver Handles */
+       I2C_Handle g_i2c;
+       UART2_Handle g_uart;
+       Timer_Handle g_timer0;
+       
+       /* Timer and Button Flags */
+       volatile unsigned char g_timerFlag = 0;
+       volatile uint8_t g_button0Flag = 0;
+       volatile uint8_t g_button1Flag = 0;
+       
+       /* Temperature Control Variables */
+       int16_t g_temperature = 25;
+       int16_t g_setpoint = 25;
+       int g_heat = 0;
+       int g_seconds = 0;
+       
+       // ============================ Function Declarations ============================
+       void initUART(void);
+       void initI2C(void);
+       int16_t readTemp(void);
+       void initTimer(void);
+       void timerCallback(Timer_Handle myHandle, int_fast16_t status);
+       void gpioButtonFxn0(uint_least8_t index);
+       void gpioButtonFxn1(uint_least8_t index);
+       void *mainThread(void *arg0);
+       
+       // ============================ Initialization Functions ============================
+       
+       /* initUART() sets up the UART communication by configuring its parameters, like the baud rate (speed of communication),
+        * and opening a connection. If something goes wrong during initialization, the program gets stuck in an infinite loop
+        * to signal a critical error. */
+       void initUART(void)
+       {
+           UART2_Params uartParams;
+           UART2_Params_init(&uartParams);
+           uartParams.baudRate = 115200;
+           g_uart = UART2_open(CONFIG_UART2_0, &uartParams);
+           if (g_uart == NULL) {
+               while (1); // Error: UART initialization failed
+           }
+       }
+       
+       /* initI2C() initializes the I2C communication by setting up its parameters and testing connections
+        * with multiple sensors to find the right one. It sends messages to indicate progress and checks if the
+        * setup works. If it fails, the program stops to signal an error. Once a sensor is found, it displays
+        * the detected address. If not, it gives an error message asking to contact professor. */
+       void initI2C(void)
+       {
+           int8_t i;
+           int found = 0;
+           I2C_Params i2cParams;
+           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Initializing I2C Driver - "));
+           I2C_init();
+           I2C_Params_init(&i2cParams);
+           i2cParams.bitRate = I2C_400kHz;
+           g_i2c = I2C_open(CONFIG_I2C_0, &i2cParams);
+           if (g_i2c == NULL) {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Failed\n\r"));
+               while (1); // Error: I2C initialization failed
+           }
+           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Passed\n\r"));
+       
+           g_i2cTransaction.writeBuf = g_txBuffer;
+           g_i2cTransaction.writeCount = 1;
+           g_i2cTransaction.readBuf = g_rxBuffer;
+           g_i2cTransaction.readCount = 0;
+       
+           for (i = 0; i < SENSOR_COUNT; ++i) {
+               g_i2cTransaction.targetAddress = g_sensors[i].address;
+               g_txBuffer[0] = g_sensors[i].resultReg;
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Is this %s? ", g_sensors[i].id));
+               if (I2C_transfer(g_i2c, &g_i2cTransaction)) {
+                   DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Found\n\r"));
+                   found = 1;
+                   break;
+               }
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "No\n\r"));
+           }
+           if (found) {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Detected TMP%s I2C address: %x\n\r", g_sensors[i].id, g_i2cTransaction.targetAddress));
+           } else {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Temperature sensor not found, contact professor\n\r"));
+           }
+       }
+       
+       /* initTimer() sets up a timer to run continuously, triggering a specific callback function at regular
+        * intervals (based on the set period). It initializes the timer parameters and starts it. The program
+        * is stopped if something goes wrong. */
+       void initTimer(void)
+       {
+           Timer_Params params;
+           Timer_init();
+           Timer_Params_init(&params);
+           params.period = TIMER_PERIOD_US;
+           params.periodUnits = Timer_PERIOD_US;
+           params.timerMode = Timer_CONTINUOUS_CALLBACK;
+           params.timerCallback = timerCallback;
+           g_timer0 = Timer_open(CONFIG_TIMER_0, &params);
+           if (g_timer0 == NULL) {
+               while (1); // Error: Timer initialization failed
+           }
+           if (Timer_start(g_timer0) == Timer_STATUS_ERROR) {
+               while (1); // Error: Timer start failed
+           }
+       }
+       
+       // ============================ Functional Logic ============================
+       
+       /* readTemp() reads the temperature from a sensor using I2C communication. It processes the data
+        * received into a human-readable temperature value (celsius) and checks for errors during the transfer.
+        * If something goes wrong, it shows an error message and suggests resetting the system. */
+       int16_t readTemp(void)
+       {
+           int16_t temperature = 0;
+           g_i2cTransaction.readCount = 2;
+           if (I2C_transfer(g_i2c, &g_i2cTransaction)) {
+               temperature = (g_rxBuffer[0] << 8) | (g_rxBuffer[1]);
+               temperature *= 0.0078125;
+               if (g_rxBuffer[0] & 0x80) {
+                   temperature |= 0xF000;
+               }
+           } else {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Error reading temperature sensor (%d)\n\r", g_i2cTransaction.status));
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Please power cycle your board by unplugging USB and plugging back in.\n\r"));
+           }
+           return temperature;
+       }
+       
+       /* Timer Callback */
+       void timerCallback(Timer_Handle myHandle, int_fast16_t status)
+       {
+           g_timerFlag = 1;
+       }
+       
+       /* GPIO Button Handlers */
+       void gpioButtonFxn0(uint_least8_t index)
+       {
+           g_button0Flag = 1;
+       }
+       
+       void gpioButtonFxn1(uint_least8_t index)
+       {
+           g_button1Flag = 1;
+       }
+       
+       // ============================ Main Logic ============================
+       void *mainThread(void *arg0)
+       {
+           GPIO_init();
+           initUART();
+           initI2C();
+           initTimer();
+       
+           // Set the LED to start off
+           GPIO_setConfig(CONFIG_GPIO_LED_0, GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+       
+           // Configure button 0 to detect button presses
+           GPIO_setConfig(CONFIG_GPIO_BUTTON_0, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+       
+           // Turn on the LED initially as a visual indicator
+           GPIO_write(CONFIG_GPIO_LED_0, CONFIG_GPIO_LED_ON);
+       
+           // Attach a callback function for Button 0 and enable its interrupt
+           GPIO_setCallback(CONFIG_GPIO_BUTTON_0, gpioButtonFxn0);
+           GPIO_enableInt(CONFIG_GPIO_BUTTON_0);
+       
+           // Apply this same configuration to button 1
+           if (CONFIG_GPIO_BUTTON_0 != CONFIG_GPIO_BUTTON_1) {
+               GPIO_setConfig(CONFIG_GPIO_BUTTON_1, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+               GPIO_setCallback(CONFIG_GPIO_BUTTON_1, gpioButtonFxn1);
+               GPIO_enableInt(CONFIG_GPIO_BUTTON_1);
+           }
+       
+           g_temperature = readTemp();
+           int timerCount = 0;
+       
+           // Main program loop
+           while (1) {
+               while (!g_timerFlag);
+               g_timerFlag = 0;
+               timerCount++;
+       
+               // Every 200ms, check if either button was pressed
+               if (timerCount % 2 == 0) {
+       
+                   // If Button 0 was pressed, decrease the setpoint, down to a min value of 0
+                   if (g_button0Flag) {
+                       g_setpoint = (g_setpoint > MIN_SETPOINT) ? g_setpoint - 1 : MIN_SETPOINT;
+                       g_button0Flag = 0;
+                   }
+       
+                   // If Button 1 was pressed, increase the setpoint, up to a max value of 99
+                   if (g_button1Flag) {
+                       g_setpoint = (g_setpoint < MAX_SETPOINT) ? g_setpoint + 1 : MAX_SETPOINT;
+                       g_button1Flag = 0;
+                   }
+               }
+       
+               // Every 500ms, read a new temperature from the sensor
+               if (timerCount % 5 == 0) {
+                   g_temperature = readTemp();
+               }
+       
+               // Every 1 second, check the temperature, update heating status, and send data
+               if (timerCount % 10 == 0) {
+       
+                   // Turn the heat on if the temperature is below the setpoint; otherwise, turn it off
+                   g_heat = (g_temperature < g_setpoint);
+                   GPIO_write(CONFIG_GPIO_LED_0, g_heat ? CONFIG_GPIO_LED_ON : CONFIG_GPIO_LED_OFF);
+       
+                   // Display room temp, setpoint temp, heat status, and uptime to the user through UART
+                   DISPLAY(snprintf(g_output, OUTPUT_SIZE, "<%02d,%02d,%d,%04d>\n\r", g_temperature, g_setpoint, g_heat, g_seconds));
+       
+                   // Increment uptime variable in seconds
+                   g_seconds++;
+               }
+           }
+       
+           return NULL;
+       }
+       
+      </code></pre>
+    </div>
+    <button class="expand-btn" onclick="toggleCode('codeBlock3', this)">Show More</button>
+
+    <h3>After Enhancement</h3>
+    <div class="code-container" id="codeBlock4">
+      <pre><code class="language-c">
+        /*
+        * gpiointerrupt.c
+        * Purpose: Basic thermostat demonstration program. Allows user to set a temperature and adjust between
+        * heating and cooling mode to maintain this temperature.
+        * Author: Christopher Bull
+        * Date: 2/2/2025
+        */
+       
+       /*
+        * Copyright (c) 2015-2020, Texas Instruments Incorporated
+        * All rights reserved.
+        *
+        * Redistribution and use in source and binary forms, with or without
+        * modification, are permitted provided that the following conditions
+        * are met:
+        *
+        * *  Redistributions in source code must retain the above copyright
+        *    notice, this list of conditions and the following disclaimer.
+        *
+        * *  Redistributions in binary form must reproduce the above copyright
+        *    notice, this list of conditions and the following disclaimer in the
+        *    documentation and/or other materials provided with the distribution.
+        *
+        * *  Neither the name of Texas Instruments Incorporated nor the names of
+        *    its contributors may be used to endorse or promote products derived
+        *    from this software without specific prior written permission.
+        *
+        * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+        * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+        * PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+        * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+        * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+        * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+        * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+        * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+        * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+        * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        */
+       
+       // ============================ Includes ============================
+       #include <stdint.h>
+       #include <stddef.h>
+       #include <stdio.h>
+       #include <stdlib.h>
+       
+       /* Driver Header files */
+       #include <ti/drivers/GPIO.h>
+       #include <ti/drivers/I2C.h>
+       #include <ti/drivers/Timer.h>
+       #include <ti/drivers/UART2.h>
+       
+       /* Driver configuration */
+       #include "ti_drivers_config.h"
+       
+       // ============================ Definitions ============================
+       #define DISPLAY(x) UART2_write(g_uart, &g_output, x, NULL)
+       #define OUTPUT_SIZE 64
+       #define SENSOR_COUNT 3
+       #define TIMER_PERIOD_US 100000
+       #define MAX_SETPOINT 99
+       #define MIN_SETPOINT 0
+       #define TEMP_THRESHOLD 2
+       #define FAULT_THRESHOLD 5
+       #define MODE_TIMEOUT_SECONDS 1800
+       
+       // ============================ Global Variables ============================
+       /* I2C Configuration */
+       static const struct {
+           uint8_t address;
+           uint8_t resultReg;
+           const char *id;
+       } g_sensors[SENSOR_COUNT] = {
+           { 0x48, 0x0000, "11X" },
+           { 0x49, 0x0000, "116" },
+           { 0x41, 0x0001, "006" }
+       };
+       uint8_t g_txBuffer[1];
+       uint8_t g_rxBuffer[2];
+       I2C_Transaction g_i2cTransaction;
+       
+       /* UART Configuration */
+       char g_output[OUTPUT_SIZE];
+       int g_bytesToSend;
+       
+       /* Driver Handles */
+       I2C_Handle g_i2c;
+       UART2_Handle g_uart;
+       Timer_Handle g_timer0;
+       
+       /* Timer and Button Flags */
+       volatile unsigned char g_timerFlag = 0;
+       volatile uint8_t g_button0Flag = 0;
+       volatile uint8_t g_button1Flag = 0;
+       
+       /* Temperature Control Variables */
+       int16_t g_temperature = 25;
+       int16_t g_setpoint = 25;
+       int g_heat = 0;
+       int g_seconds = 0;
+       
+       /* System Control Variables */
+       int g_mode = 0;
+       int g_modeDuration = 0;
+       int16_t g_lastValidTemperature = 25;
+       
+       // ============================ Function Declarations ============================
+       void initUART(void);
+       void initI2C(void);
+       int16_t readTemp(void);
+       void initTimer(void);
+       void timerCallback(Timer_Handle myHandle, int_fast16_t status);
+       void gpioButtonFxn0(uint_least8_t index);
+       void gpioButtonFxn1(uint_least8_t index);
+       void *mainThread(void *arg0);
+       
+       // ============================ Initialization Functions ============================
+       
+       /* initUART() sets up the UART communication by configuring its parameters, like the baud rate (speed of communication),
+        * and opening a connection. If something goes wrong during initialization, the program gets stuck in an infinite loop
+        * to signal a critical error. */
+       void initUART(void)
+       {
+           UART2_Params uartParams;
+           UART2_Params_init(&uartParams);
+           uartParams.baudRate = 115200;
+           g_uart = UART2_open(CONFIG_UART2_0, &uartParams);
+           if (g_uart == NULL) {
+               while (1); // Error: UART initialization failed
+           }
+       }
+       
+       /* initI2C() initializes the I2C communication by setting up its parameters and testing connections
+        * with multiple sensors to find the right one. It sends messages to indicate progress and checks if the
+        * setup works. If it fails, the program stops to signal an error. Once a sensor is found, it displays
+        * the detected address. If not, it gives an error message asking to contact professor. */
+       void initI2C(void)
+       {
+           int8_t i;
+           int found = 0;
+           I2C_Params i2cParams;
+           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Initializing I2C Driver - "));
+           I2C_init();
+           I2C_Params_init(&i2cParams);
+           i2cParams.bitRate = I2C_400kHz;
+           g_i2c = I2C_open(CONFIG_I2C_0, &i2cParams);
+           if (g_i2c == NULL) {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Failed\n\r"));
+               while (1); // Error: I2C initialization failed
+           }
+           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Passed\n\r"));
+       
+           g_i2cTransaction.writeBuf = g_txBuffer;
+           g_i2cTransaction.writeCount = 1;
+           g_i2cTransaction.readBuf = g_rxBuffer;
+           g_i2cTransaction.readCount = 0;
+       
+           for (i = 0; i < SENSOR_COUNT; ++i) {
+               g_i2cTransaction.targetAddress = g_sensors[i].address;
+               g_txBuffer[0] = g_sensors[i].resultReg;
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Is this %s? ", g_sensors[i].id));
+               if (I2C_transfer(g_i2c, &g_i2cTransaction)) {
+                   DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Found\n\r"));
+                   found = 1;
+                   break;
+               }
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "No\n\r"));
+           }
+           if (found) {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Detected TMP%s I2C address: %x\n\r", g_sensors[i].id, g_i2cTransaction.targetAddress));
+           } else {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Temperature sensor not found, contact professor\n\r"));
+           }
+       }
+       
+       /* initTimer() sets up a timer to run continuously, triggering a specific callback function at regular
+        * intervals (based on the set period). It initializes the timer parameters and starts it. The program
+        * is stopped if something goes wrong. */
+       void initTimer(void)
+       {
+           Timer_Params params;
+           Timer_init();
+           Timer_Params_init(&params);
+           params.period = TIMER_PERIOD_US;
+           params.periodUnits = Timer_PERIOD_US;
+           params.timerMode = Timer_CONTINUOUS_CALLBACK;
+           params.timerCallback = timerCallback;
+           g_timer0 = Timer_open(CONFIG_TIMER_0, &params);
+           if (g_timer0 == NULL) {
+               while (1); // Error: Timer initialization failed
+           }
+           if (Timer_start(g_timer0) == Timer_STATUS_ERROR) {
+               while (1); // Error: Timer start failed
+           }
+       }
+       
+       // ============================ Functional Logic ============================
+       
+       /* readTemp() reads the temperature from a sensor using I2C communication. It processes the data
+        * received into a human-readable temperature value (celsius) and checks for errors during the transfer.
+        * If something goes wrong, it shows an error message and suggests resetting the system. */
+       int16_t readTemp(void)
+       {
+           int16_t temperature = 0;
+           g_i2cTransaction.readCount = 2;
+           if (I2C_transfer(g_i2c, &g_i2cTransaction)) {
+               temperature = (g_rxBuffer[0] << 8) | (g_rxBuffer[1]);
+               temperature *= 0.0078125;
+               if (g_rxBuffer[0] & 0x80) {
+                   temperature |= 0xF000;
+               }
+           } else {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Error reading temperature sensor (%d)\n\r", g_i2cTransaction.status));
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Please power cycle your board by unplugging USB and plugging back in.\n\r"));
+           }
+           return temperature;
+       }
+       
+       /* Timer Callback */
+       void timerCallback(Timer_Handle myHandle, int_fast16_t status)
+       {
+           g_timerFlag = 1;
+       }
+       
+       /* GPIO Button Handlers */
+       void gpioButtonFxn0(uint_least8_t index)
+       {
+           g_button0Flag = 1;
+       }
+       
+       void gpioButtonFxn1(uint_least8_t index)
+       {
+           g_button1Flag = 1;
+       }
+       
+       // ============================ Main Logic ============================
+       void *mainThread(void *arg0)
+       {
+           GPIO_init();
+           initUART();
+           initI2C();
+           initTimer();
+       
+           // Set the LED to start off
+           GPIO_setConfig(CONFIG_GPIO_LED_0, GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+       
+           /// Configure button 0 to detect button presses
+           GPIO_setConfig(CONFIG_GPIO_BUTTON_0, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+       
+           // Turn on the LED initially as a visual indicator
+           GPIO_write(CONFIG_GPIO_LED_0, CONFIG_GPIO_LED_ON);
+       
+           // Attach a callback function for Button 0 and enable its interrupt
+           GPIO_setCallback(CONFIG_GPIO_BUTTON_0, gpioButtonFxn0);
+           GPIO_enableInt(CONFIG_GPIO_BUTTON_0);
+       
+           // Apply this same configuration to button 1
+           if (CONFIG_GPIO_BUTTON_0 != CONFIG_GPIO_BUTTON_1) {
+               GPIO_setConfig(CONFIG_GPIO_BUTTON_1, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+               GPIO_setCallback(CONFIG_GPIO_BUTTON_1, gpioButtonFxn1);
+               GPIO_enableInt(CONFIG_GPIO_BUTTON_1);
+           }
+       
+           g_temperature = readTemp();
+           g_lastValidTemperature = g_temperature;
+           int timerCount = 0;
+       
+           // Main program loop
+           while (1) {
+               while (!g_timerFlag);
+               g_timerFlag = 0;
+               timerCount++;
+       
+               // Every 200ms, check if either button was pressed
+               if (timerCount % 2 == 0) {
+                   // If both buttons are pressed simultaneously within one cycle, toggle the heating/cooling mode.
+                   // After toggling, reset the continuous operation timer
+                   if (g_button0Flag && g_button1Flag) {
+                       g_mode = (g_mode == 0) ? 1 : 0;
+                       g_heat = 0;
+                       g_modeDuration = 0;
+                       DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Mode switched to: %s\n\r", (g_mode == 0) ? "Heating" : "Cooling"));
+                       g_button0Flag = 0;
+                       g_button1Flag = 0;
+                   } else {
+                       // If Button 0 was pressed, decrease the setpoint, down to a min value of 0
+                       if (g_button0Flag) {
+                           g_setpoint = (g_setpoint > MIN_SETPOINT) ? g_setpoint - 1 : MIN_SETPOINT;
+                           g_button0Flag = 0;
+                       }
+       
+                       // If Button 1 was pressed, increase the setpoint, up to a max value of 99
+                       if (g_button1Flag) {
+                           g_setpoint = (g_setpoint < MAX_SETPOINT) ? g_setpoint + 1 : MAX_SETPOINT;
+                           g_button1Flag = 0;
+                       }
+                   }
+               }
+       
+               // Every 500ms, read a new temperature from the sensor
+               if (timerCount % 5 == 0) {
+                   int16_t newTemp = readTemp();
+       
+                   // If the newly read temperature is over 5 degrees warmer or colder than the previous temperature, discard the reading and alert the user
+                   if (abs(newTemp - g_lastValidTemperature) > FAULT_THRESHOLD) {
+                       DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Fault detected: sudden temp change from %d to %d\n\r",
+                                        g_lastValidTemperature, newTemp));
+                   } else {
+                       g_temperature = newTemp;
+                       g_lastValidTemperature = newTemp;
+                   }
+               }
+       
+               // Every 1 second, check the temperature, update heating status, and send data
+               if (timerCount % 10 == 0) {
+       
+                   // Heating mode - wait to turn on heat until the temperature is at least two degrees below setpoint for efficiency purposes
+                   if (g_mode == 0) {
+                       if (!g_heat && g_temperature <= (g_setpoint - TEMP_THRESHOLD)) {
+                           g_heat = 1;
+                       } else if (g_heat && g_temperature >= g_setpoint) {
+                           g_heat = 0;
+                       }
+                   // Cooling mode - wait to turn on cooling until the temperature is at least two degrees above setpoint for efficiency purposes
+                   } else {
+                       if (!g_heat && g_temperature >= (g_setpoint + TEMP_THRESHOLD)) {
+                           g_heat = 1;
+                       } else if (g_heat && g_temperature <= g_setpoint) {
+                           g_heat = 0;
+                       }
+                   }
+       
+                   // Timer to keep track of how long the heat has been on
+                   if (g_heat) {
+                       g_modeDuration++;
+                   } else {
+                       g_modeDuration = 0;
+                   }
+       
+       
+                   // If the heat has been on for longer than 30 minutes straight, turn the system off and alert the user
+                   if (g_modeDuration >= MODE_TIMEOUT_SECONDS) {
+                       g_heat = 0;
+                       DISPLAY(snprintf(g_output, OUTPUT_SIZE, "System timeout reached: Turning off %s\n\r",
+                                        (g_mode == 0) ? "Heating" : "Cooling"));
+                       g_modeDuration = 0;
+                   }
+       
+                   GPIO_write(CONFIG_GPIO_LED_0, g_heat ? CONFIG_GPIO_LED_ON : CONFIG_GPIO_LED_OFF);
+       
+                   // Display room temp, setpoint temp, heat status, and uptime to the user through UART
+                   DISPLAY(snprintf(g_output, OUTPUT_SIZE, "<%02d,%02d,%s,%d,%04d>\n\r",
+                                    g_temperature, g_setpoint, (g_mode == 0) ? "H" : "C", g_heat, g_seconds));
+       
+                   // Increment uptime variable in seconds
+                   g_seconds++;
+               }
+           }
+       
+           return NULL;
+       }
+       
+      </code></pre>
+    </div>
+    <button class="expand-btn" onclick="toggleCode('codeBlock4', this)">Show More</button>
+    <h2>Video Review of New Functionality</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/11gwjnQ6VE8?si=aFRedwKfE_g3iL2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Because this is the same artifact as I worked on in the last module, I faced the challenge of upholding my rigorous documentation and formatting standards that I set in the last enhancement. This did make coding more challenging but led to a more readable and functional product by the end. I forced myself to continue to use ternary operators to write my if…else blocks in shorthand form. I have seen this formatting used in professional work and wanted to strengthen my understanding of it through my work in this course.</p>
+    <p>I learned that the algorithm I implemented in my thermostat is better known as the “Hysteresis algorithm”. I also learned that modern smart thermostats typically allow the Hysteresis algorithm sensitivity value to be adjusted through advanced settings. Making this value smaller will cause the system to turn on and off more frequently.</p>
+  </div>
+
+  <!-- Databases Enhancement Section -->
+  <div class="section" id="enhancement-3">
+    <h2>Databases Enhancement</h2>
+    <div class="narrative">
+      <p>The artifact that I chose to improve for the Databases section of the final project is my final project from SNHU’s CS-350 Emerging Sys Arch & Tech class. In this project, we used a CS3220x-LAUNCHXL microcontroller to develop a prototype of a thermostat. The thermostat reads the ambient temperature of the room every 500 milliseconds. The user can press buttons on the side of the microcontroller to adjust the set temperature for the room. If the set temperature goes above the current ambient temperature, an LED turns on indicating that the heat should be turned on. </p>
+      <p>I selected this project because it is the project at SNHU that I felt challenged me the most. I went into it with no experience in embedded systems and ran into many issues while I was getting used to the new coding style and IDE. By the end of the class, I felt a lot more comfortable with embedded systems development and even found them enjoyable to work with.</p>
+      <p>I have worked on this same artifact for all three enhancements being showcased in the CS-499 class, so the application is almost entirely new at this point. All of the logic and implementations within the main loop of the program, the documentation and structure of the program, and the Python script used for the database connection showcase my skills and abilities in software development. I was able to transform a basic prototype thermostat program into a full-fledged thermostat that contains many features that a smart thermostat on today’s market might come equipped with.</p>
+      <p>In this enhancement, I implemented a fully functional SQLite database into the program that logs all user interactions with the thermostat.</p>
+      <p>Specifically, it logs:
+        <ul>
+          <li>Setpoint temperature increases by the user</li>
+          <li>Setpoint temperature decreases by the user</li>
+          <li>Cooling turning on/off</li>
+          <li>Heating turning on/off</li>
+          <li>Switching mode from heating to cooling by the user and vice versa</li>
+        </ul>
+      </p>
+      <p>Every logged action is inserted into the database with a timestamp (YYYY-MM-DD HH:MM:SS), code name of change, and before and after value.</p>
+      <p>In module one, I planned for this section of the project to achieve the following course outcome: “Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals”. I was able to achieve this course outcome by fully implementing a auditing database using SQLite, a well-founded database tool used for smaller applications. Throughout all three of the enhancements I also believe that I have achieved following course outcome: “Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources”. When developing the Python script for the database connection, I used my knowledge from CS-405 Secure Coding to protect against SQLi attacks on the database. I did this by using a parameterized query which separates local_timestamp, event_type, str(old_value), and str(new_value) as separate parameters when passed to the query. This ensures that the SQLite database interprets the provided values are treated as data and not SQL commands.</p>
+    </div>
+    <h3>Before Enhancement</h3>
+    <div class="code-container" id="codeBlock5">
+      <pre><code class="language-c">
+        /*
+        * gpiointerrupt.c
+        * Purpose: Basic thermostat demonstration program. Allows user to set a temperature and adjust between
+        * heating and cooling mode to maintain this temperature.
+        * Author: Christopher Bull
+        * Date: 2/2/2025
+        */
+       
+       /*
+        * Copyright (c) 2015-2020, Texas Instruments Incorporated
+        * All rights reserved.
+        *
+        * Redistribution and use in source and binary forms, with or without
+        * modification, are permitted provided that the following conditions
+        * are met:
+        *
+        * *  Redistributions in source code must retain the above copyright
+        *    notice, this list of conditions and the following disclaimer.
+        *
+        * *  Redistributions in binary form must reproduce the above copyright
+        *    notice, this list of conditions and the following disclaimer in the
+        *    documentation and/or other materials provided with the distribution.
+        *
+        * *  Neither the name of Texas Instruments Incorporated nor the names of
+        *    its contributors may be used to endorse or promote products derived
+        *    from this software without specific prior written permission.
+        *
+        * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+        * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+        * PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+        * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+        * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+        * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+        * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+        * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+        * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+        * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        */
+       
+       // ============================ Includes ============================
+       #include <stdint.h>
+       #include <stddef.h>
+       #include <stdio.h>
+       #include <stdlib.h>
+       
+       /* Driver Header files */
+       #include <ti/drivers/GPIO.h>
+       #include <ti/drivers/I2C.h>
+       #include <ti/drivers/Timer.h>
+       #include <ti/drivers/UART2.h>
+       
+       /* Driver configuration */
+       #include "ti_drivers_config.h"
+       
+       // ============================ Definitions ============================
+       #define DISPLAY(x) UART2_write(g_uart, &g_output, x, NULL)
+       #define OUTPUT_SIZE 64
+       #define SENSOR_COUNT 3
+       #define TIMER_PERIOD_US 100000
+       #define MAX_SETPOINT 99
+       #define MIN_SETPOINT 0
+       #define TEMP_THRESHOLD 2
+       #define FAULT_THRESHOLD 5
+       #define MODE_TIMEOUT_SECONDS 1800
+       
+       // ============================ Global Variables ============================
+       /* I2C Configuration */
+       static const struct {
+           uint8_t address;
+           uint8_t resultReg;
+           const char *id;
+       } g_sensors[SENSOR_COUNT] = {
+           { 0x48, 0x0000, "11X" },
+           { 0x49, 0x0000, "116" },
+           { 0x41, 0x0001, "006" }
+       };
+       uint8_t g_txBuffer[1];
+       uint8_t g_rxBuffer[2];
+       I2C_Transaction g_i2cTransaction;
+       
+       /* UART Configuration */
+       char g_output[OUTPUT_SIZE];
+       int g_bytesToSend;
+       
+       /* Driver Handles */
+       I2C_Handle g_i2c;
+       UART2_Handle g_uart;
+       Timer_Handle g_timer0;
+       
+       /* Timer and Button Flags */
+       volatile unsigned char g_timerFlag = 0;
+       volatile uint8_t g_button0Flag = 0;
+       volatile uint8_t g_button1Flag = 0;
+       
+       /* Temperature Control Variables */
+       int16_t g_temperature = 25;
+       int16_t g_setpoint = 25;
+       int g_heat = 0;
+       int g_seconds = 0;
+       
+       /* System Control Variables */
+       int g_mode = 0;
+       int g_modeDuration = 0;
+       int16_t g_lastValidTemperature = 25;
+       
+       // ============================ Function Declarations ============================
+       void initUART(void);
+       void initI2C(void);
+       int16_t readTemp(void);
+       void initTimer(void);
+       void timerCallback(Timer_Handle myHandle, int_fast16_t status);
+       void gpioButtonFxn0(uint_least8_t index);
+       void gpioButtonFxn1(uint_least8_t index);
+       void *mainThread(void *arg0);
+       
+       // ============================ Initialization Functions ============================
+       
+       /* initUART() sets up the UART communication by configuring its parameters, like the baud rate (speed of communication),
+        * and opening a connection. If something goes wrong during initialization, the program gets stuck in an infinite loop
+        * to signal a critical error. */
+       void initUART(void)
+       {
+           UART2_Params uartParams;
+           UART2_Params_init(&uartParams);
+           uartParams.baudRate = 115200;
+           g_uart = UART2_open(CONFIG_UART2_0, &uartParams);
+           if (g_uart == NULL) {
+               while (1); // Error: UART initialization failed
+           }
+       }
+       
+       /* initI2C() initializes the I2C communication by setting up its parameters and testing connections
+        * with multiple sensors to find the right one. It sends messages to indicate progress and checks if the
+        * setup works. If it fails, the program stops to signal an error. Once a sensor is found, it displays
+        * the detected address. If not, it gives an error message asking to contact professor. */
+       void initI2C(void)
+       {
+           int8_t i;
+           int found = 0;
+           I2C_Params i2cParams;
+           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Initializing I2C Driver - "));
+           I2C_init();
+           I2C_Params_init(&i2cParams);
+           i2cParams.bitRate = I2C_400kHz;
+           g_i2c = I2C_open(CONFIG_I2C_0, &i2cParams);
+           if (g_i2c == NULL) {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Failed\n\r"));
+               while (1); // Error: I2C initialization failed
+           }
+           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Passed\n\r"));
+       
+           g_i2cTransaction.writeBuf = g_txBuffer;
+           g_i2cTransaction.writeCount = 1;
+           g_i2cTransaction.readBuf = g_rxBuffer;
+           g_i2cTransaction.readCount = 0;
+       
+           for (i = 0; i < SENSOR_COUNT; ++i) {
+               g_i2cTransaction.targetAddress = g_sensors[i].address;
+               g_txBuffer[0] = g_sensors[i].resultReg;
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Is this %s? ", g_sensors[i].id));
+               if (I2C_transfer(g_i2c, &g_i2cTransaction)) {
+                   DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Found\n\r"));
+                   found = 1;
+                   break;
+               }
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "No\n\r"));
+           }
+           if (found) {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Detected TMP%s I2C address: %x\n\r", g_sensors[i].id, g_i2cTransaction.targetAddress));
+           } else {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Temperature sensor not found, contact professor\n\r"));
+           }
+       }
+       
+       /* initTimer() sets up a timer to run continuously, triggering a specific callback function at regular
+        * intervals (based on the set period). It initializes the timer parameters and starts it. The program
+        * is stopped if something goes wrong. */
+       void initTimer(void)
+       {
+           Timer_Params params;
+           Timer_init();
+           Timer_Params_init(&params);
+           params.period = TIMER_PERIOD_US;
+           params.periodUnits = Timer_PERIOD_US;
+           params.timerMode = Timer_CONTINUOUS_CALLBACK;
+           params.timerCallback = timerCallback;
+           g_timer0 = Timer_open(CONFIG_TIMER_0, &params);
+           if (g_timer0 == NULL) {
+               while (1); // Error: Timer initialization failed
+           }
+           if (Timer_start(g_timer0) == Timer_STATUS_ERROR) {
+               while (1); // Error: Timer start failed
+           }
+       }
+       
+       // ============================ Functional Logic ============================
+       
+       /* readTemp() reads the temperature from a sensor using I2C communication. It processes the data
+        * received into a human-readable temperature value (celsius) and checks for errors during the transfer.
+        * If something goes wrong, it shows an error message and suggests resetting the system. */
+       int16_t readTemp(void)
+       {
+           int16_t temperature = 0;
+           g_i2cTransaction.readCount = 2;
+           if (I2C_transfer(g_i2c, &g_i2cTransaction)) {
+               temperature = (g_rxBuffer[0] << 8) | (g_rxBuffer[1]);
+               temperature *= 0.0078125;
+               if (g_rxBuffer[0] & 0x80) {
+                   temperature |= 0xF000;
+               }
+           } else {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Error reading temperature sensor (%d)\n\r", g_i2cTransaction.status));
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Please power cycle your board by unplugging USB and plugging back in.\n\r"));
+           }
+           return temperature;
+       }
+       
+       /* Timer Callback */
+       void timerCallback(Timer_Handle myHandle, int_fast16_t status)
+       {
+           g_timerFlag = 1;
+       }
+       
+       /* GPIO Button Handlers */
+       void gpioButtonFxn0(uint_least8_t index)
+       {
+           g_button0Flag = 1;
+       }
+       
+       void gpioButtonFxn1(uint_least8_t index)
+       {
+           g_button1Flag = 1;
+       }
+       
+       // ============================ Main Logic ============================
+       void *mainThread(void *arg0)
+       {
+           GPIO_init();
+           initUART();
+           initI2C();
+           initTimer();
+       
+           // Set the LED to start off
+           GPIO_setConfig(CONFIG_GPIO_LED_0, GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+       
+           /// Configure button 0 to detect button presses
+           GPIO_setConfig(CONFIG_GPIO_BUTTON_0, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+       
+           // Turn on the LED initially as a visual indicator
+           GPIO_write(CONFIG_GPIO_LED_0, CONFIG_GPIO_LED_ON);
+       
+           // Attach a callback function for Button 0 and enable its interrupt
+           GPIO_setCallback(CONFIG_GPIO_BUTTON_0, gpioButtonFxn0);
+           GPIO_enableInt(CONFIG_GPIO_BUTTON_0);
+       
+           // Apply this same configuration to button 1
+           if (CONFIG_GPIO_BUTTON_0 != CONFIG_GPIO_BUTTON_1) {
+               GPIO_setConfig(CONFIG_GPIO_BUTTON_1, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+               GPIO_setCallback(CONFIG_GPIO_BUTTON_1, gpioButtonFxn1);
+               GPIO_enableInt(CONFIG_GPIO_BUTTON_1);
+           }
+       
+           g_temperature = readTemp();
+           g_lastValidTemperature = g_temperature;
+           int timerCount = 0;
+       
+           // Main program loop
+           while (1) {
+               while (!g_timerFlag);
+               g_timerFlag = 0;
+               timerCount++;
+       
+               // Every 200ms, check if either button was pressed
+               if (timerCount % 2 == 0) {
+                   // If both buttons are pressed simultaneously within one cycle, toggle the heating/cooling mode.
+                   // After toggling, reset the continuous operation timer
+                   if (g_button0Flag && g_button1Flag) {
+                       g_mode = (g_mode == 0) ? 1 : 0;
+                       g_heat = 0;
+                       g_modeDuration = 0;
+                       DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Mode switched to: %s\n\r", (g_mode == 0) ? "Heating" : "Cooling"));
+                       g_button0Flag = 0;
+                       g_button1Flag = 0;
+                   } else {
+                       // If Button 0 was pressed, decrease the setpoint, down to a min value of 0
+                       if (g_button0Flag) {
+                           g_setpoint = (g_setpoint > MIN_SETPOINT) ? g_setpoint - 1 : MIN_SETPOINT;
+                           g_button0Flag = 0;
+                       }
+       
+                       // If Button 1 was pressed, increase the setpoint, up to a max value of 99
+                       if (g_button1Flag) {
+                           g_setpoint = (g_setpoint < MAX_SETPOINT) ? g_setpoint + 1 : MAX_SETPOINT;
+                           g_button1Flag = 0;
+                       }
+                   }
+               }
+       
+               // Every 500ms, read a new temperature from the sensor
+               if (timerCount % 5 == 0) {
+                   int16_t newTemp = readTemp();
+       
+                   // If the newly read temperature is over 5 degrees warmer or colder than the previous temperature, discard the reading and alert the user
+                   if (abs(newTemp - g_lastValidTemperature) > FAULT_THRESHOLD) {
+                       DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Fault detected: sudden temp change from %d to %d\n\r",
+                                        g_lastValidTemperature, newTemp));
+                   } else {
+                       g_temperature = newTemp;
+                       g_lastValidTemperature = newTemp;
+                   }
+               }
+       
+               // Every 1 second, check the temperature, update heating status, and send data
+               if (timerCount % 10 == 0) {
+       
+                   // Heating mode - wait to turn on heat until the temperature is at least two degrees below setpoint for efficiency purposes
+                   if (g_mode == 0) {
+                       if (!g_heat && g_temperature <= (g_setpoint - TEMP_THRESHOLD)) {
+                           g_heat = 1;
+                       } else if (g_heat && g_temperature >= g_setpoint) {
+                           g_heat = 0;
+                       }
+                   // Cooling mode - wait to turn on cooling until the temperature is at least two degrees above setpoint for efficiency purposes
+                   } else {
+                       if (!g_heat && g_temperature >= (g_setpoint + TEMP_THRESHOLD)) {
+                           g_heat = 1;
+                       } else if (g_heat && g_temperature <= g_setpoint) {
+                           g_heat = 0;
+                       }
+                   }
+       
+                   // Timer to keep track of how long the heat has been on
+                   if (g_heat) {
+                       g_modeDuration++;
+                   } else {
+                       g_modeDuration = 0;
+                   }
+       
+       
+                   // If the heat has been on for longer than 30 minutes straight, turn the system off and alert the user
+                   if (g_modeDuration >= MODE_TIMEOUT_SECONDS) {
+                       g_heat = 0;
+                       DISPLAY(snprintf(g_output, OUTPUT_SIZE, "System timeout reached: Turning off %s\n\r",
+                                        (g_mode == 0) ? "Heating" : "Cooling"));
+                       g_modeDuration = 0;
+                   }
+       
+                   GPIO_write(CONFIG_GPIO_LED_0, g_heat ? CONFIG_GPIO_LED_ON : CONFIG_GPIO_LED_OFF);
+       
+                   // Display room temp, setpoint temp, heat status, and uptime to the user through UART
+                   DISPLAY(snprintf(g_output, OUTPUT_SIZE, "<%02d,%02d,%s,%d,%04d>\n\r",
+                                    g_temperature, g_setpoint, (g_mode == 0) ? "H" : "C", g_heat, g_seconds));
+       
+                   // Increment uptime variable in seconds
+                   g_seconds++;
+               }
+           }
+       
+           return NULL;
+       }       
+      </code></pre>
+    </div>
+    <button class="expand-btn" onclick="toggleCode('codeBlock5', this)">Show More</button>
+
+    <h3>After Enhancement - Embedded C Code</h3>
+    <div class="code-container" id="codeBlock6">
+      <pre><code class="language-c">
+        /*
+        * gpiointerrupt.c
+        * Purpose: Basic thermostat demonstration program. Allows user to set a temperature and adjust between
+        * heating and cooling mode to maintain this temperature.
+        * Author: Christopher Bull
+        * Date: 2/9/2025
+        */
+       
+       /*
+        * Copyright (c) 2015-2020, Texas Instruments Incorporated
+        * All rights reserved.
+        *
+        * Redistribution and use in source and binary forms, with or without
+        * modification, are permitted provided that the following conditions
+        * are met:
+        *
+        * *  Redistributions in source code must retain the above copyright
+        *    notice, this list of conditions and the following disclaimer.
+        *
+        * *  Redistributions in binary form must reproduce the above copyright
+        *    notice, this list of conditions and the following disclaimer in the
+        *    documentation and/or other materials provided with the distribution.
+        *
+        * *  Neither the name of Texas Instruments Incorporated nor the names of
+        *    its contributors may be used to endorse or promote products derived
+        *    from this software without specific prior written permission.
+        *
+        * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+        * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+        * PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+        * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+        * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+        * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+        * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+        * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+        * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+        * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        */
+       
+       // ============================ Includes ============================
+       #include <stdint.h>
+       #include <stddef.h>
+       #include <stdio.h>
+       #include <stdlib.h>
+       
+       /* Driver Header files */
+       #include <ti/drivers/GPIO.h>
+       #include <ti/drivers/I2C.h>
+       #include <ti/drivers/Timer.h>
+       #include <ti/drivers/UART2.h>
+       
+       /* Driver configuration */
+       #include "ti_drivers_config.h"
+       
+       // ============================ Definitions ============================
+       #define DISPLAY(x) UART2_write(g_uart, &g_output, x, NULL)
+       #define OUTPUT_SIZE 64
+       #define SENSOR_COUNT 3
+       #define TIMER_PERIOD_US 100000
+       #define MAX_SETPOINT 99
+       #define MIN_SETPOINT 0
+       #define TEMP_THRESHOLD 2
+       #define FAULT_THRESHOLD 5
+       #define MODE_TIMEOUT_SECONDS 1800
+       
+       // ============================ Global Variables ============================
+       /* I2C Configuration */
+       static const struct {
+           uint8_t address;
+           uint8_t resultReg;
+           const char *id;
+       } g_sensors[SENSOR_COUNT] = {
+           { 0x48, 0x0000, "11X" },
+           { 0x49, 0x0000, "116" },
+           { 0x41, 0x0001, "006" }
+       };
+       uint8_t g_txBuffer[1];
+       uint8_t g_rxBuffer[2];
+       I2C_Transaction g_i2cTransaction;
+       
+       /* UART Configuration */
+       char g_output[OUTPUT_SIZE];
+       int g_bytesToSend;
+       
+       /* Driver Handles */
+       I2C_Handle g_i2c;
+       UART2_Handle g_uart;
+       Timer_Handle g_timer0;
+       
+       /* Timer and Button Flags */
+       volatile unsigned char g_timerFlag = 0;
+       volatile uint8_t g_button0Flag = 0;
+       volatile uint8_t g_button1Flag = 0;
+       
+       /* Temperature Control Variables */
+       int16_t g_temperature = 25;
+       int16_t g_setpoint = 25;
+       int g_heat = 0;
+       int g_seconds = 0;
+       
+       /* System Control Variables */
+       int g_mode = 0;
+       int g_modeDuration = 0;
+       int16_t g_lastValidTemperature = 25;
+       
+       // ============================ Function Declarations ============================
+       void initUART(void);
+       void initI2C(void);
+       int16_t readTemp(void);
+       void initTimer(void);
+       void timerCallback(Timer_Handle myHandle, int_fast16_t status);
+       void gpioButtonFxn0(uint_least8_t index);
+       void gpioButtonFxn1(uint_least8_t index);
+       void *mainThread(void *arg0);
+       
+       // ============================ Initialization Functions ============================
+       
+       /* initUART() sets up the UART communication by configuring its parameters, like the baud rate (speed of communication),
+        * and opening a connection. If something goes wrong during initialization, the program gets stuck in an infinite loop
+        * to signal a critical error. */
+       void initUART(void)
+       {
+           UART2_Params uartParams;
+           UART2_Params_init(&uartParams);
+           uartParams.baudRate = 115200;
+           g_uart = UART2_open(CONFIG_UART2_0, &uartParams);
+           if (g_uart == NULL) {
+               while (1); // Error: UART initialization failed
+           }
+       }
+       
+       /* initI2C() initializes the I2C communication by setting up its parameters and testing connections
+        * with multiple sensors to find the right one. It sends messages to indicate progress and checks if the
+        * setup works. If it fails, the program stops to signal an error. Once a sensor is found, it displays
+        * the detected address. If not, it gives an error message asking to contact professor. */
+       void initI2C(void)
+       {
+           int8_t i;
+           int found = 0;
+           I2C_Params i2cParams;
+           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Initializing I2C Driver - "));
+           I2C_init();
+           I2C_Params_init(&i2cParams);
+           i2cParams.bitRate = I2C_400kHz;
+           g_i2c = I2C_open(CONFIG_I2C_0, &i2cParams);
+           if (g_i2c == NULL) {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Failed\n\r"));
+               while (1); // Error: I2C initialization failed
+           }
+           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Passed\n\r"));
+       
+           g_i2cTransaction.writeBuf = g_txBuffer;
+           g_i2cTransaction.writeCount = 1;
+           g_i2cTransaction.readBuf = g_rxBuffer;
+           g_i2cTransaction.readCount = 0;
+       
+           for (i = 0; i < SENSOR_COUNT; ++i) {
+               g_i2cTransaction.targetAddress = g_sensors[i].address;
+               g_txBuffer[0] = g_sensors[i].resultReg;
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Is this %s? ", g_sensors[i].id));
+               if (I2C_transfer(g_i2c, &g_i2cTransaction)) {
+                   DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Found\n\r"));
+                   found = 1;
+                   break;
+               }
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "No\n\r"));
+           }
+           if (found) {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Detected TMP%s I2C address: %x\n\r", g_sensors[i].id, g_i2cTransaction.targetAddress));
+           } else {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Temperature sensor not found, contact professor\n\r"));
+           }
+       }
+       
+       /* initTimer() sets up a timer to run continuously, triggering a specific callback function at regular
+        * intervals (based on the set period). It initializes the timer parameters and starts it. The program
+        * is stopped if something goes wrong. */
+       void initTimer(void)
+       {
+           Timer_Params params;
+           Timer_init();
+           Timer_Params_init(&params);
+           params.period = TIMER_PERIOD_US;
+           params.periodUnits = Timer_PERIOD_US;
+           params.timerMode = Timer_CONTINUOUS_CALLBACK;
+           params.timerCallback = timerCallback;
+           g_timer0 = Timer_open(CONFIG_TIMER_0, &params);
+           if (g_timer0 == NULL) {
+               while (1); // Error: Timer initialization failed
+           }
+           if (Timer_start(g_timer0) == Timer_STATUS_ERROR) {
+               while (1); // Error: Timer start failed
+           }
+       }
+       
+       // ============================ Functional Logic ============================
+       
+       /* readTemp() reads the temperature from a sensor using I2C communication. It processes the data
+        * received into a human-readable temperature value (celsius) and checks for errors during the transfer.
+        * If something goes wrong, it shows an error message and suggests resetting the system. */
+       int16_t readTemp(void)
+       {
+           int16_t temperature = 0;
+           g_i2cTransaction.readCount = 2;
+           if (I2C_transfer(g_i2c, &g_i2cTransaction)) {
+               temperature = (g_rxBuffer[0] << 8) | (g_rxBuffer[1]);
+               temperature *= 0.0078125;
+               if (g_rxBuffer[0] & 0x80) {
+                   temperature |= 0xF000;
+               }
+           } else {
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Error reading temperature sensor (%d)\n\r", g_i2cTransaction.status));
+               DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Please power cycle your board by unplugging USB and plugging back in.\n\r"));
+           }
+           return temperature;
+       }
+       
+       /* Timer Callback */
+       void timerCallback(Timer_Handle myHandle, int_fast16_t status)
+       {
+           g_timerFlag = 1;
+       }
+       
+       /* GPIO Button Handlers */
+       void gpioButtonFxn0(uint_least8_t index)
+       {
+           g_button0Flag = 1;
+       }
+       
+       void gpioButtonFxn1(uint_least8_t index)
+       {
+           g_button1Flag = 1;
+       }
+       
+       // ============================ Main Logic ============================
+       void *mainThread(void *arg0)
+       {
+           GPIO_init();
+           initUART();
+           initI2C();
+           initTimer();
+       
+           // Set the LED to start off
+           GPIO_setConfig(CONFIG_GPIO_LED_0, GPIO_CFG_OUT_STD | GPIO_CFG_OUT_LOW);
+       
+           /// Configure button 0 to detect button presses
+           GPIO_setConfig(CONFIG_GPIO_BUTTON_0, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+       
+           // Turn on the LED initially as a visual indicator
+           GPIO_write(CONFIG_GPIO_LED_0, CONFIG_GPIO_LED_ON);
+       
+           // Attach a callback function for Button 0 and enable its interrupt
+           GPIO_setCallback(CONFIG_GPIO_BUTTON_0, gpioButtonFxn0);
+           GPIO_enableInt(CONFIG_GPIO_BUTTON_0);
+       
+           // Apply this same configuration to button 1
+           if (CONFIG_GPIO_BUTTON_0 != CONFIG_GPIO_BUTTON_1) {
+               GPIO_setConfig(CONFIG_GPIO_BUTTON_1, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+               GPIO_setCallback(CONFIG_GPIO_BUTTON_1, gpioButtonFxn1);
+               GPIO_enableInt(CONFIG_GPIO_BUTTON_1);
+           }
+       
+           g_temperature = readTemp();
+           g_lastValidTemperature = g_temperature;
+           int timerCount = 0;
+       
+           // Main program loop
+           while (1) {
+               while (!g_timerFlag);
+               g_timerFlag = 0;
+               timerCount++;
+       
+               // Every 200ms, check if either button was pressed
+               if (timerCount % 2 == 0) {
+                   // If both buttons are pressed simultaneously within one cycle, toggle the heating/cooling mode
+                   if (g_button0Flag && g_button1Flag) {
+       
+                       // Save the current mode before toggling
+                       int oldMode = g_mode;
+                       g_mode = (g_mode == 0) ? 1 : 0;
+                       g_heat = 0;
+                       g_modeDuration = 0;
+       
+                       // Log the mode toggle event with the before and after mode values
+                       DISPLAY(snprintf(g_output, OUTPUT_SIZE, "LOG: %d,ModeToggle,old=%s,new=%s\n\r", g_seconds, (oldMode == 0) ? "Heating" : "Cooling", (g_mode == 0) ? "Heating" : "Cooling"));
+                       g_button0Flag = 0;
+                       g_button1Flag = 0;
+                   } else {
+                       // If Button 0 was pressed, decrease the setpoint and log the event
+                       if (g_button0Flag) {
+                           int oldSetpoint = g_setpoint;
+                           g_setpoint = (g_setpoint > MIN_SETPOINT) ? g_setpoint - 1 : MIN_SETPOINT;
+       
+                           // Log the setpoint decrease event with before and after values
+                           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "LOG: %d,SetpointChange,old=%d,new=%d\n\r", g_seconds, oldSetpoint, g_setpoint));
+                           g_button0Flag = 0;
+                       }
+       
+                       // If Button 1 was pressed, increase the setpoint and log the event
+                       if (g_button1Flag) {
+                           int oldSetpoint = g_setpoint;
+                           g_setpoint = (g_setpoint < MAX_SETPOINT) ? g_setpoint + 1 : MAX_SETPOINT;
+       
+                           // Log the setpoint increase event with before and after values
+                           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "LOG: %d,SetpointChange,old=%d,new=%d\n\r", g_seconds, oldSetpoint, g_setpoint));
+                           g_button1Flag = 0;
+                       }
+                   }
+               }
+       
+               // Every 500ms, read a new temperature from the sensor
+               if (timerCount % 5 == 0) {
+                   int16_t newTemp = readTemp();
+       
+                   // If the newly read temperature is over 5 degrees warmer or colder than the previous temperature, discard the reading and alert the user
+                   if (abs(newTemp - g_lastValidTemperature) > FAULT_THRESHOLD) {
+                       DISPLAY(snprintf(g_output, OUTPUT_SIZE, "Fault detected: sudden temp change from %d to %d\n\r", g_lastValidTemperature, newTemp));
+                   } else {
+                       g_temperature = newTemp;
+                       g_lastValidTemperature = newTemp;
+                   }
+               }
+       
+               // Every 1 second, check the temperature, update heating status, and send data
+               if (timerCount % 10 == 0) {
+       
+                   // Heating mode - wait to turn on heat until the temperature is at least two degrees below setpoint for efficiency purposes
+                   if (g_mode == 0) {
+                       if (!g_heat && g_temperature <= (g_setpoint - TEMP_THRESHOLD)) {
+                           // Log when heating is turned on
+                           int oldHeat = g_heat;
+                           g_heat = 1;
+                           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "LOG: %d,HeatOn,old=%d,new=%d\n\r", g_seconds, oldHeat, g_heat));
+                       } else if (g_heat && g_temperature >= g_setpoint) {
+                           // Log when heating is turned off
+                           int oldHeat = g_heat;
+                           g_heat = 0;
+                           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "LOG: %d,HeatOff,old=%d,new=%d\n\r", g_seconds, oldHeat, g_heat));
+                       }
+                   }
+                   // Cooling mode - wait to turn on cooling until the temperature is at least two degrees above setpoint for efficiency purposes
+                   else {
+                       if (!g_heat && g_temperature >= (g_setpoint + TEMP_THRESHOLD)) {
+                           // Log when cooling is turned on
+                           int oldHeat = g_heat;
+                           g_heat = 1;
+                           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "LOG: %d,CoolOn,old=%d,new=%d\n\r", g_seconds, oldHeat, g_heat));
+                       } else if (g_heat && g_temperature <= g_setpoint) {
+                           // Log when cooling is turned off
+                           int oldHeat = g_heat;
+                           g_heat = 0;
+                           DISPLAY(snprintf(g_output, OUTPUT_SIZE, "LOG: %d,CoolOff,old=%d,new=%d\n\r", g_seconds, oldHeat, g_heat));
+                       }
+                   }
+       
+                   // Timer to keep track of how long the heat (or cooling) has been on
+                   if (g_heat) {
+                       g_modeDuration++;
+                   } else {
+                       g_modeDuration = 0;
+                   }
+       
+                   // If the heat (or cooling) has been on for longer than 30 minutes straight, turn the system off and alert the user
+                   if (g_modeDuration >= MODE_TIMEOUT_SECONDS) {
+                       g_heat = 0;
+                       DISPLAY(snprintf(g_output, OUTPUT_SIZE, "System timeout reached: Turning off %s\n\r", (g_mode == 0) ? "Heating" : "Cooling"));
+                       g_modeDuration = 0;
+                   }
+       
+                   GPIO_write(CONFIG_GPIO_LED_0, g_heat ? CONFIG_GPIO_LED_ON : CONFIG_GPIO_LED_OFF);
+       
+                   // Display room temp, setpoint temp, heat status, and uptime to the user through UART
+                   DISPLAY(snprintf(g_output, OUTPUT_SIZE, "<%02d,%02d,%s,%d,%04d>\n\r", g_temperature, g_setpoint, (g_mode == 0) ? "H" : "C", g_heat, g_seconds));
+       
+                   // Increment uptime variable in seconds
+                   g_seconds++;
+               }
+           }
+       
+           return NULL;
+       }       
+      </code></pre>
+    </div>
+    <button class="expand-btn" onclick="toggleCode('codeBlock6', this)">Show More</button>
+
+    <h3>After Enhancement - Python DB Connector Code</h3>
+    <div class="code-container" id="codeBlock7">
+      <pre><code class="language-python">
+        import serial
+        import sqlite3
+        from datetime import datetime
+        import pytz
+        
+        
+        # Initialize and return the SQLite database connection and cursor
+        def setup_database(db_name='thermostat_logs.db'):
+            conn = sqlite3.connect(db_name)
+            cursor = conn.cursor()
+        
+            # Create the logs table if it does not already exist
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS logs (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    timestamp TEXT,
+                    event_type TEXT,
+                    old_value TEXT,
+                    new_value TEXT
+                )
+            ''')
+            conn.commit()
+            return conn, cursor
+        
+        
+        # Inserts the given log info into the database
+        def log_event(cursor, conn, event_type, old_value, new_value):
+            # Get the current time in Phoenix, Arizona using pytz
+            phoenix_tz = pytz.timezone("America/Phoenix")
+            local_timestamp = datetime.now(phoenix_tz).strftime("%Y-%m-%d %H:%M:%S")
+        
+            # Insert a new record into the 'logs' table with a timestamp, event type, old value, and new value.
+            # Uses parameterized query to prevent SQLi
+            cursor.execute('''
+                INSERT INTO logs (timestamp, event_type, old_value, new_value)
+                VALUES (?, ?, ?, ?)
+            ''', (local_timestamp, event_type, str(old_value), str(new_value)))
+            conn.commit()
+        
+            # Confirming that event was written to DB
+            print(f"Logged event: {local_timestamp}, {event_type}, {old_value} -> {new_value}")
+        
+        
+        # Parses log messages from serial connection to prepare for database write
+        # Returns (event_type, old_value, new_value)
+        # Expected format: "LOG: <timestamp>,<event_type>,old=<old_value>,new=<new_value>"
+        def parse_log_line(line):
+            # Parses the message and ignores the board's second timestamp in position 0
+            try:
+                content = line[5:]  # Remove "LOG: " prefix
+                parts = content.split(',')
+                event_type = parts[1]
+                old_value = parts[2].split('=')[1]
+                new_value = parts[3].split('=')[1]
+                return event_type, old_value, new_value
+            except Exception as e:
+                print(f"Failed to parse log line: {line}. Error: {e}")
+                return None
+        
+        
+        def main():
+            # Initializing serial connection and SQLite database connection
+            ser = serial.Serial(port="COM4", baudrate=115200, timeout=1)
+            conn, cursor = setup_database()
+        
+            # Trying to read outputs from the serial connection to the CC3220x-LAUNCHXL board
+            try:
+                while True:
+                    try:
+                        line = ser.readline().decode('utf-8').strip()
+        
+                        # If the line is not empty, output to the console
+                        if line:
+                            print(line)
+        
+                            # If the line starts with "LOG:" then we know it is a database entry
+                            if line.startswith("LOG:"):
+                                # Getting info from log message
+                                parsed_data = parse_log_line(line)
+        
+                                # Logging data in the database
+                                if parsed_data:
+                                    log_event(cursor, conn, *parsed_data)
+                    except Exception as e:
+                        print(f"Error reading from serial port: {e}")
+            except KeyboardInterrupt:
+                print("Exiting...")
+            finally:
+                ser.close()
+                conn.close()
+        
+        
+        if __name__ == "__main__":
+            main()
+          </code></pre>
+    </div>
+    <button class="expand-btn" onclick="toggleCode('codeBlock7', this)">Show More</button>
+
+    <h2>Video Review of New Functionality</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gAwenvEDJ_U?si=QvYkd7HG-Li150YJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>Because this is the same artifact as I worked on in the last module, I faced the challenge of upholding my rigorous documentation and formatting standards that I set last week. This did make coding more challenging but led to a more readable and functional product by the end. I forced myself to continue to use ternary operators to write my if…else blocks in shorthand form. I have seen this formatting used in professional work and wanted to strengthen my understanding of it through my work in this course.</p>
+    <p>I began by trying to use SQLite within the embedded system itself but immediately ran into issues when trying to use on-board storage. This caused me to transition into hosting the database locally on my computer. In a production implementation, this database could also be hosted in the cloud, the implementation would be very similar.</p>
+    <p>This has been the most useful artifact for learning new concepts in software engineering because I was able to get exposure with SQLite and practice in Python. I was already comfortable with Python but had never interacted with SQLite or its Python package. After completing this assignment, I feel very confident in my ability to write future database connections using Python middleware to connect to an SQLite database.</p>
+  </div>
+  <script>
+    function toggleCode(containerId, btn) {
+      var container = document.getElementById(containerId);
+      if (container.classList.contains('expanded')) {
+        container.classList.remove('expanded');
+        btn.textContent = 'Show More';
+      } else {
+        container.classList.add('expanded');
+        btn.textContent = 'Show Less';
+      }
+    }
+  </script>
+  <script>
+    hljs.highlightAll();
+  </script>
+</body>
+</html>
